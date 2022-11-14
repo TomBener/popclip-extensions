@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>After</key>
+			<string>paste-result</string>
+			<key>Image File</key>
+			<string>quotes.png</string>
+			<key>Requirements</key>
+			<array>
+				<string>copy</string>
+			</array>
+            <key>Shell Script File</key>
+            <string>smart.sh</string>
+			<key>Stoppable</key>
+			<false/>
+			<key>Title</key>
+			<string>Smart Punctuations</string>
+		</dict>
+	</array>
+	<key>Extension Identifier</key>
+	<string>com.tomben.smart.extension</string>
+	<key>Extension Name</key>
+	<string>Smart Punctuations</string>
+	<key>Extension Description</key>
+	<string>Convert straight quotes to curly quotes with Pandoc etc.</string>
+</dict>
+</plist>
