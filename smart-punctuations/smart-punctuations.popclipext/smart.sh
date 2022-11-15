@@ -1,3 +1,11 @@
 #!/bin/zsh
-echo "$POPCLIP_TEXT" | pandoc \
---wrap=preserve --to markdown-smart
+string="$POPCLIP_TEXT"
+
+if grep -q "$string" <<< "\n"
+then
+  echo $string | pandoc --wrap=preserve \
+  --to markdown-smart
+else
+  echo $string | pandoc --wrap=preserve \
+  --to markdown-smart | tr -d '\n'
+fi
